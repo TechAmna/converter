@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Temperature"
+    android:background="@drawable/img">
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <TextView
+        android:id="@+id/cc2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="@string/currencyy"
+        android:layout_below="@+id/view"
+        android:textSize="28sp" />
+    <Space
+        android:id="@+id/spacer"
+        android:layout_width="10dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/cc2"
+        android:layout_below="@id/view"/>
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="185dp"
+        android:textColor="@color/blue"
+        android:layout_height="40dp"
+        android:text="@string/temperature_converter"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/spacer"
+        android:layout_below="@+id/view"
+        android:textSize="28sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true">
+        <Spinner
+
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:id="@+id/temperatureSpinner" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/temp_value"
+            android:layout_width="250dp"
+            android:hint="@string/enter_value2"
+            android:layout_height="48dp"
+            android:layout_gravity="center"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <Button
+            android:id="@+id/convert_temp"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:text="@string/convert"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/blue"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/temp_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textStyle="italic"
+            android:textColor="@color/green"
+            android:layout_gravity="center"
+            android:textSize="40sp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">converter</string>
+    <string name="welcome">Welcome</string>
+    <string name="todo">TODO</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="convert">Convert</string>
+    <string name="temperature_converter">Temperature</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="enter_value2">Enter value</string>
+    <string name="currency">curr</string>
+    <string name="currencyy">Currency</string>
+    <string name="logo">logo</string>
+    <string-array name="currency_types">
+        <item>USD</item>
+        <item>INR</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>INR</item>
+        <item>CAD</item>
+        <item>AUD</item>
+        <item>JPY</item>
+        <item>SAR</item>
+        <item>CNY</item>
+        <item>PKR</item>
+    </string-array>
+    <string-array name="conversion_types">
+        <item>Celsius to Fahrenheit</item>
+        <item>Fahrenheit to Celsius</item>
+    </string-array>
+</resources>
